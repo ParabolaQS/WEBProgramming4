@@ -28,8 +28,6 @@ Then open `http://localhost:8000` in your browser and click **Load Tasks**.
 - **Immutable state updates:** Used array spread, `filter`, and `map` to replace the task array instead of mutating it. Toggling creates a new `Task` instance.
 - **Read-only task IDs:** Defined `id` with `Object.defineProperty` as non-writable and non-configurable.
 - **DOM updates and events:** Created elements with DOM methods and attached event listeners rather than using inline event attributes.
-- **JSON handling:** Serialized the fetched data with `JSON.stringify` and parsed it with `JSON.parse` before creating `Task` instances.
-
 ## Notes
 
 - No external libraries or frameworks are used.
