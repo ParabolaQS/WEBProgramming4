@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <main class="dashboard">
+    <header class="page-header">
+      <p class="eyebrow">STUDENT WORKSPACE</p>
+      <h1>Task Dashboard</h1>
+      <p class="subtitle">A small, focused space to keep your study tasks moving.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="tasks-heading">
+      <div class="panel-heading">
+        <div>
+          <h2 id="tasks-heading">Your tasks</h2>
+          <p class="panel-caption">Load the sample tasks, then track your progress.</p>
+        </div>
+        <button id="loadTasksBtn" class="primary-button" type="button">Load Tasks</button>
+      </div>
+      <p id="statusMessage" role="status" aria-live="polite"></p>
+      <div id="taskList" class="task-list"></div>
+    </section>
+    <footer>Built with vanilla JavaScript · No libraries required</footer>
+  </main>
+</body>
+</html>
